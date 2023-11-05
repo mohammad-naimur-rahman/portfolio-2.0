@@ -28,7 +28,7 @@ export default function ExperienceCard({ experience }: Props) {
       <ul>
         {experience.description.map(description => (
           <Typography variant="body" className="py-1">
-            <span className="text-teal-500 text-2xl">▹</span>
+            <span className="text-teal-500 text-2xl inline-block">▹</span>
             {description}
           </Typography>
         ))}

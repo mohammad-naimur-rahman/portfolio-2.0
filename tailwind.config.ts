@@ -7,7 +7,7 @@ const config: Config = {
     extend: {
       colors: {
         primary: '#0a192f',
-        secondary: '#0CCE6B',
+        secondary: '#112240',
         tertiary: '#16a34a',
         'bg-primary': '#111827',
         'bg-secondary': 'rgba(250, 250, 250, 0.4)',
