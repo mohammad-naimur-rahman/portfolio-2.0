@@ -37,8 +37,8 @@ const sizes: Record<Variant, string> = {
   h4: 'font-semibold text-xl sm:text-2xl',
   h5: 'font-semibold text-lg sm:text-xl',
   body: 'text-base text-zinc-600 dark:text-zinc-400',
-  'body-small': 'text-md sm:text-sm',
-  small: 'text-sm sm:text-xs',
+  'body-small': 'text-md sm:text-sm text-zinc-600 dark:text-zinc-400',
+  small: 'text-sm sm:text-xs text-zinc-600 dark:text-zinc-400',
 }
 
 const Typography = forwardRef<HTMLElement, Props>(
