@@ -2,12 +2,13 @@ import { cn } from '@/utils/cn'
 import Image, { StaticImageData } from 'next/image'
 
 interface Props {
-  src: StaticImageData
+  src: StaticImageData | string
   alt: string
   width?: number
   height?: number
   sizes?: string
   className?: string
+  activePlaceholder?: boolean
 }
 
 export function Img({
@@ -17,6 +18,7 @@ export function Img({
   height = 500,
   sizes = '40vw',
   className,
+  activePlaceholder = true,
   ...rest
 }: Props) {
   return (
@@ -27,7 +29,7 @@ export function Img({
       width={width}
       height={height}
       className={cn('w-full h-auto block', className)}
-      placeholder="blur"
+      placeholder={activePlaceholder ? 'blur' : 'empty'}
       loading="lazy"
       {...rest}
     />

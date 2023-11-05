@@ -1,4 +1,5 @@
 import me from '@/assets/images/homepage/me.png'
+import Button from '@/components/ui/button'
 import ExternalLink from '@/components/ui/external-link'
 import { Img } from '@/components/ui/img'
 import Typography from '@/components/ui/typography'
@@ -15,19 +16,13 @@ export default function About() {
             I&apos;m <span className="text-teal-500">Naimur Rahman</span>, an
             experienced full stack web developer.
           </Typography>
-          <div className="flex gap-2 mt-5">
-            <button
-              type="button"
-              className="bg-slate-600 text-white px-8 py-3 rounded-full flex items-center gap-2"
-            >
-              Get my CV <BsDownload />
-            </button>
-            <button
-              type="button"
-              className="bg-teal-500 text-zinc-800 px-8 py-3 rounded-full flex items-center gap-2"
-            >
-              Contact Me <GrContact />
-            </button>
+          <div className="flex gap-3 mt-5">
+            <Button
+              value="Get My CV"
+              icon={<BsDownload />}
+              variant="secondary"
+            />
+            <Button value="Contact Me" icon={<GrContact />} variant="primary" />
           </div>
         </div>
         <Img src={me} alt="Naimur Rahman" className="w-48 h-48 rounded-full" />
@@ -35,9 +30,10 @@ export default function About() {
 
       <div className="space-y-5 pt-7">
         <Typography variant="body" className="text-xl text-balance">
-          👋 Hey there! I&apos;m Naimur Rahman, a full-stack web developer with
-          over 2 years of hands-on experience in creating optimized web
-          applications with good user experience.
+          <span className="text-2xl">👋</span> Hey there! I&apos;m Naimur
+          Rahman, a full-stack web developer with over 2 years of hands-on
+          experience in creating optimized web applications with good user
+          experience.
         </Typography>
 
         <Typography variant="body" className="text-lg">
