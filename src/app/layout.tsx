@@ -21,10 +21,16 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={cn(nunito.className, jost.variable)}>
+      <body
+        className={cn(
+          nunito.className,
+          jost.variable,
+          'dark:bg-bg-primary dark:text-zinc-100 text-zinc-700'
+        )}
+      >
         <Providers>
           <Navbar />
-          {children}
+          <div className="mt-20 container">{children}</div>
         </Providers>
       </body>
     </html>

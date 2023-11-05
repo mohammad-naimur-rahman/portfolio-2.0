@@ -6,7 +6,7 @@ import ThemeSwitcher from './ThemeSwitcher'
 
 export default function Navbar() {
   return (
-    <nav className="container py-3 flex justify-between items-center">
+    <nav className="container py-3 flex justify-between items-center backdrop-blur-lg fixed top-0 left-0 right-0 w-full z-20">
       <Link href="/">
         <Img
           src={logo}

@@ -6,10 +6,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#33E092',
+        primary: 'rgb(45, 212, 191)',
         secondary: '#0CCE6B',
         tertiary: '#16a34a',
-        bg: 'rgba(39, 39, 43, 0.4)',
+        'bg-primary': '#111827',
         'bg-secondary': 'rgba(250, 250, 250, 0.4)',
       },
     },
