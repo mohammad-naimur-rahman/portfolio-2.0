@@ -1,6 +1,7 @@
 import animationData from '@/assets/lottiefiles/blog.json'
 import Button from '@/components/ui/button'
 import Heading from '@/components/ui/heading'
+import { mediumLink } from '@/configs'
 import BlogCard from './BlogCard'
 
 export interface IBlog {
@@ -16,8 +17,8 @@ interface Props {
 }
 
 export default function Blogs({ blogs }: Props) {
-  const sortedBlogs = blogs.sort((a, b) => b.published - a.published)
-  const firstThreeBlogs = sortedBlogs.slice(0, 3)
+  const sortedBlogs = blogs?.sort((a, b) => b.published - a.published)
+  const firstThreeBlogs = sortedBlogs?.slice(0, 3)
 
   return (
     <section className="py-20" id="blog">
@@ -31,7 +32,7 @@ export default function Blogs({ blogs }: Props) {
 
       <div className="flex justify-center">
         <a
-          href="https://naimur-rahman-dev.medium.com"
+          href={mediumLink}
           target="_blank"
           className="mt-3 inline-block"
           rel="noreferrer"

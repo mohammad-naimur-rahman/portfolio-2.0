@@ -1,2 +1,2 @@
-export const mediumToken = process.env.NEXT_PUBLIC_MEDIUM_TOKEN
-export const myMediumUserId = '@naimur-rahman-dev'
+export const mediumApi = process.env.NEXT_PUBLIC_MEDIUM_API
+export const mediumLink = process.env.NEXT_PUBLIC_MEDIUM_LINK

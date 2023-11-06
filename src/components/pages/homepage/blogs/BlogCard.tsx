@@ -29,16 +29,16 @@ export default function BlogCard({ blog }: Props) {
   const imageUrl = parseImageUrl(blog?.content)
   return (
     <div className="flex gap-5 bg-white dark:bg-secondary shadow-md rounded-xl p-5">
-      <div className="overflow-hidden ax-h-[200px] w-auto aspect-video object-cover">
+      <div className="overflow-hidden max-h-[200px] w-auto aspect-video object-cover">
         {imageUrl ? (
           <Img
             src={imageUrl}
             alt={blog?.title}
             activePlaceholder={false}
-            sizes="350px"
-            width={350}
-            height={200}
-            className="w-full h-full aspect-video object-cover hover:scale-125 transition-transform duration-700"
+            sizes="450px"
+            width={450}
+            height={300}
+            className="w-full h-full aspect-video object-cover hover:scale-110 transition-transform duration-700"
           />
         ) : null}
       </div>
