@@ -7,6 +7,7 @@ interface ButtonProps {
   icon?: ReactNode
   className?: string
   onClick?: () => void
+  type?: 'button' | 'submit'
 }
 
 const Button: FC<ButtonProps> = ({
@@ -15,6 +16,7 @@ const Button: FC<ButtonProps> = ({
   icon,
   onClick,
   className,
+  type = 'button',
 }) => {
   const buttonClasses = `px-8 py-3 rounded-full flex items-center gap-2 ${
     variant === 'secondary'
@@ -24,7 +26,7 @@ const Button: FC<ButtonProps> = ({
 
   return (
     <button
-      type="button"
+      type={type === 'button' ? 'button' : 'submit'}
       className={cn(buttonClasses, className)}
       onClick={onClick}
     >

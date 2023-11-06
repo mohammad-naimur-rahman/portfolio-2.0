@@ -1,7 +1,7 @@
 import animationData from '@/assets/lottiefiles/blog.json'
 import Button from '@/components/ui/button'
 import Heading from '@/components/ui/heading'
-import { mediumLink } from '@/configs'
+import { configs } from '@/configs'
 import BlogCard from './BlogCard'
 
 export interface IBlog {
@@ -32,7 +32,7 @@ export default function Blogs({ blogs }: Props) {
 
       <div className="flex justify-center">
         <a
-          href={mediumLink}
+          href={configs.medium.link}
           target="_blank"
           className="mt-3 inline-block"
           rel="noreferrer"

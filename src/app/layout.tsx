@@ -5,6 +5,7 @@ import { cn } from '@/utils/cn'
 import type { Metadata } from 'next'
 import { Jost, Nunito } from 'next/font/google'
 import { ReactNode } from 'react'
+import { Toaster } from 'react-hot-toast'
 
 const nunito = Nunito({ subsets: ['latin'] })
 
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <Navbar />
           <div className="mt-20 container">{children}</div>
         </Providers>
+        <Toaster position="top-center" />
       </body>
     </html>
   )
