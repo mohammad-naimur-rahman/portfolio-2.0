@@ -25,29 +25,29 @@ function ProjectLinks({ project }: { project: IProject }) {
 
 function LeftProject({ project }: { project: IProject }) {
   return (
-    <div className="flex items-center relative">
-      <div className="w-3/5">
+    <div className="flex flex-col md:flex-row items-center relative">
+      <div className="w-full md:w-3/5">
         <Img
           src={project.image}
           alt={project.title}
           className="aspect-video object-cover"
         />
       </div>
-      <div className="w-2/5 space-y-1 p-3 text-right">
+      <div className="w-full md:w-2/5 space-y-1 p-3 text-left md:text-right">
         <p className="font-jost text-teal-500">Featured Project</p>
         <Typography variant="h4" className="pb-2">
           {project.title}
         </Typography>
-        <div className="bg-white shadow-xl dark:bg-secondary p-6 -ml-32 text-slate-800 dark:text-slate-200">
+        <div className="bg-transparent md:bg-white shadow-none md:shadow-xl md:dark:bg-secondary p-0 md:p-6 ml-auto md:-ml-32 text-slate-800 dark:text-slate-200">
           <p>{project.description}</p>
         </div>
-        <ul className="flex flex-wrap gap-3 justify-end py-3 font-jost text-teal-800 dark:text-teal-300">
+        <ul className="flex flex-wrap gap-3 justify-start md:justify-end py-3 font-jost text-teal-800 dark:text-teal-300">
           {project.stack.map(stack => (
             <li key={stack}>{stack}</li>
           ))}
         </ul>
 
-        <ul className="flex flex-wrap gap-3 justify-end">
+        <ul className="flex flex-wrap gap-3 justify-start md:justify-end">
           <ProjectLinks project={project} />
         </ul>
       </div>
@@ -57,13 +57,13 @@ function LeftProject({ project }: { project: IProject }) {
 
 function RightProject({ project }: { project: IProject }) {
   return (
-    <div className="flex items-center relative">
-      <div className="w-2/5 space-y-1 p-3 text-left z-20">
+    <div className="flex flex-col md:flex-row items-center relative">
+      <div className="w-full order-2 md:order-1 md:w-2/5 space-y-1 p-3 text-left z-20">
         <p className="font-jost text-teal-500">Featured Project</p>
         <Typography variant="h4" className="pb-2">
           {project.title}
         </Typography>
-        <div className="bg-white shadow-xl dark:bg-secondary p-6 -mr-32 z-20 text-slate-800 dark:text-slate-200">
+        <div className="bg-transparent md:bg-white shadow-none md:shadow-xl md:dark:bg-secondary p-0 md:p-6 ml-auto md:-mr-32 z-20 text-slate-800 dark:text-slate-200">
           <p>{project.description}</p>
         </div>
         <ul className="flex flex-wrap gap-3 justify-start py-3 font-jost text-teal-800 dark:text-teal-300">
@@ -77,7 +77,7 @@ function RightProject({ project }: { project: IProject }) {
         </ul>
       </div>
 
-      <div className="w-3/5 z-10">
+      <div className="w-full order-1 md:order-2 md:w-3/5 z-10">
         <Img
           src={project.image}
           alt={project.title}

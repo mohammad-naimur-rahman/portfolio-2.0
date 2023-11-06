@@ -21,7 +21,7 @@ export default function Blogs({ blogs }: Props) {
   const firstThreeBlogs = sortedBlogs?.slice(0, 3)
 
   return (
-    <section className="py-20" id="blog">
+    <section className="py-10 md:py-16 lg:py-20" id="blog">
       <Heading animationData={animationData}>Some of My Blogs</Heading>
 
       <div className="py-5 space-y-5">

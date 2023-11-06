@@ -9,14 +9,14 @@ import WorkTag from './WorkTag'
 
 export default function About() {
   return (
-    <section className="py-20" id="about">
-      <div className="flex items-center">
-        <div>
+    <section className="py-10 md:py-16 lg:py-20" id="about">
+      <div className="flex flex-col md:flex-row gap-10 items-center">
+        <div className="order-2 md:order-1">
           <Typography variant="h2" className="font-bold text-balance">
             I&apos;m <span className="text-teal-500">Naimur Rahman</span>, an
             experienced full stack web developer.
           </Typography>
-          <div className="flex gap-3 mt-5">
+          <div className="flex flex-wrap gap-3 mt-5">
             <Button
               value="Get My CV"
               icon={<BsDownload />}
@@ -25,7 +25,11 @@ export default function About() {
             <Button value="Contact Me" icon={<GrContact />} variant="primary" />
           </div>
         </div>
-        <Img src={me} alt="Naimur Rahman" className="w-48 h-48 rounded-full" />
+        <Img
+          src={me}
+          alt="Naimur Rahman"
+          className="w-48 h-48 rounded-full order-1 md:order-2"
+        />
       </div>
 
       <div className="space-y-5 pt-7">

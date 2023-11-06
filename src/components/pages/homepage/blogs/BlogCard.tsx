@@ -28,22 +28,24 @@ function parseImageUrl(html: string): string | undefined {
 export default function BlogCard({ blog }: Props) {
   const imageUrl = parseImageUrl(blog?.content)
   return (
-    <div className="flex gap-5 bg-white dark:bg-secondary shadow-md rounded-xl p-5">
-      <div className="overflow-hidden max-h-[200px] w-auto aspect-video object-cover">
+    <div className="flex flex-col md:flex-row gap-5 bg-white dark:bg-secondary shadow-md rounded-xl p-5">
+      <div className="overflow-hidden w-full md:w-80 h-auto aspect-video object-cover">
         {imageUrl ? (
           <Img
             src={imageUrl}
             alt={blog?.title}
             activePlaceholder={false}
-            sizes="450px"
-            width={450}
-            height={300}
-            className="w-full h-full aspect-video object-cover hover:scale-110 transition-transform duration-700"
+            sizes="500px"
+            width={500}
+            height={400}
+            className="w-full h-full object-cover hover:scale-125 transition-transform duration-500"
           />
         ) : null}
       </div>
       <div className="space-y-3">
-        <Typography variant="h5">{blog?.title}</Typography>
+        <Typography variant="h5" className="text-balance">
+          {blog?.title}
+        </Typography>
         <Typography variant="body" className="flex items-center gap-2">
           <BsCalendar2Day /> {formateDate(blog?.published)}
         </Typography>

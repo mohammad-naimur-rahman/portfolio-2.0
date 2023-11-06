@@ -16,6 +16,8 @@ export default function ContactForm() {
   const sendEmail: FormEventHandler<HTMLFormElement> = e => {
     e.preventDefault()
 
+    toast.loading('Sending message...', { duration: 1000 })
+
     if (form.current) {
       emailjs
         .sendForm(

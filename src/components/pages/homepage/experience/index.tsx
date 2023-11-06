@@ -5,7 +5,7 @@ import ExperienceCard from './ExperienceCard'
 
 export default function Experience() {
   return (
-    <section className="py-20">
+    <section className="py-10 md:py-16 lg:py-20">
       <Heading animationData={animationdData}>Where I&apos;ve Worked</Heading>
       <div className="flex flex-col gap-5">
         {experiences.map(experience => (
