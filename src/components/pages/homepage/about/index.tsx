@@ -28,7 +28,7 @@ export default function About() {
         <Img
           src={me}
           alt="Naimur Rahman"
-          className="w-48 h-48 rounded-full order-1 md:order-2"
+          className="w-40 h-40 sm:w-44 sm:h-44 md:w-48 md:h-48 rounded-full order-1 md:order-2"
         />
       </div>
 

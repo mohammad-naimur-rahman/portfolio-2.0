@@ -15,7 +15,7 @@ export default function NavDrawer({ className, isOpen, setIsOpen }: Props) {
   return (
     <div
       className={cn(
-        'fixed top-20 w-full bg-secondary transition-all duration-500 ease-in-out',
+        'fixed top-20 w-full bg-secondary text-slate-200 transition-all duration-500 ease-in-out',
         className,
         {
           'right-0': isOpen,

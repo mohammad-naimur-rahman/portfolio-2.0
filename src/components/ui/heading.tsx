@@ -22,7 +22,7 @@ export default function Heading({ children, animationData, className }: Props) {
         autoplay
         loop
         speed={1}
-        className="w-32 h-32"
+        className="w-20 h-20 sm:w-32 sm:h-32"
       />
     </div>
   )
