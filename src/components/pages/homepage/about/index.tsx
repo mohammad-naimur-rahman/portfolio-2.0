@@ -30,18 +30,9 @@ export default function About() {
 
       <div className="space-y-5 pt-7">
         <Typography variant="body" className="text-xl text-balance">
-          <span className="text-2xl">👋</span> Hey there! I&apos;m Naimur
-          Rahman, a full-stack web developer with over 2 years of hands-on
-          experience in creating optimized web applications with good user
-          experience.
-        </Typography>
-
-        <Typography variant="body" className="text-lg">
-          I started with a government-hosted course program and then followed
-          many YouTube videos, playlists, Udemy courses, online boot camps,
-          blogs, documentations, etc. And still trying to enrich my knowledge in
-          the web development field, my prior goal is to transform myself from a
-          developer to an engineer.
+          <span className="text-2xl">👋</span> Hey there! I&apos;m a full stack
+          web developer with over 2 years of hands-on experience in creating
+          optimized web applications with good user experience.
         </Typography>
 
         <Typography variant="body" className="text-lg">

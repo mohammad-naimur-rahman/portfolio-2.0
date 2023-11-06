@@ -7,7 +7,7 @@ export default function Header() {
     <header className="flex items-center gap-10 py-32">
       <section className="w-3/5">
         <Typography variant="h1" className="font-bold text-balance">
-          Full Stack Web Developer, Technical Writer & Content Creator
+          Web Developer, Technical Writer & Content Creator
         </Typography>
         <Typography
           variant="body"
