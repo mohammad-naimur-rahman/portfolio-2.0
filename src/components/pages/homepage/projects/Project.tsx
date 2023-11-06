@@ -38,7 +38,7 @@ function LeftProject({ project }: { project: IProject }) {
         <Typography variant="h4" className="pb-2">
           {project.title}
         </Typography>
-        <div className="bg-secondary p-6 -ml-32 text-slate-200">
+        <div className="bg-white shadow-xl dark:bg-secondary p-6 -ml-32 text-slate-800 dark:text-slate-200">
           <p>{project.description}</p>
         </div>
         <ul className="flex flex-wrap gap-3 justify-end py-3 font-jost text-teal-800 dark:text-teal-300">
@@ -63,7 +63,7 @@ function RightProject({ project }: { project: IProject }) {
         <Typography variant="h4" className="pb-2">
           {project.title}
         </Typography>
-        <div className="bg-secondary p-6 -mr-32 z-20 text-slate-200">
+        <div className="bg-white shadow-xl dark:bg-secondary p-6 -mr-32 z-20 text-slate-800 dark:text-slate-200">
           <p>{project.description}</p>
         </div>
         <ul className="flex flex-wrap gap-3 justify-start py-3 font-jost text-teal-800 dark:text-teal-300">

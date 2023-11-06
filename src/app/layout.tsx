@@ -1,13 +1,17 @@
 import Navbar from '@/components/ui/navbar'
+import ScrollToTop from '@/components/ui/scroll-to-top'
 import { Providers } from '@/lib/Providers'
 import '@/styles/globals.scss'
 import { cn } from '@/utils/cn'
 import type { Metadata } from 'next'
-import { Jost, Nunito } from 'next/font/google'
+import { Jost, PT_Sans as PTSans } from 'next/font/google'
 import { ReactNode } from 'react'
 import { Toaster } from 'react-hot-toast'
 
-const nunito = Nunito({ subsets: ['latin'] })
+const ptSans = PTSans({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
 
 const jost = Jost({
   subsets: ['latin'],
@@ -24,7 +28,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body
         className={cn(
-          nunito.className,
+          ptSans.className,
           jost.variable,
           'dark:bg-bg-primary dark:text-zinc-100 text-zinc-700'
         )}
@@ -34,6 +38,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <div className="mt-20 container">{children}</div>
         </Providers>
         <Toaster position="top-center" />
+        <ScrollToTop />
       </body>
     </html>
   )

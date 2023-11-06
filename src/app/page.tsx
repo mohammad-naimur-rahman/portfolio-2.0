@@ -3,6 +3,7 @@ import About from '@/components/pages/homepage/about'
 import Blogs from '@/components/pages/homepage/blogs'
 import Contact from '@/components/pages/homepage/contact'
 import Experience from '@/components/pages/homepage/experience'
+import Footer from '@/components/pages/homepage/footer'
 import Header from '@/components/pages/homepage/header'
 import Projects from '@/components/pages/homepage/projects'
 import Skills from '@/components/pages/homepage/skills'
@@ -29,6 +30,7 @@ export default async function Home() {
       <Projects />
       <Blogs blogs={blogs} />
       <Contact />
+      <Footer />
     </main>
   )
 }

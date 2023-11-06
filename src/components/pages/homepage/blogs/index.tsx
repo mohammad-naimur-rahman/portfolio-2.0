@@ -22,7 +22,7 @@ export default function Blogs({ blogs }: Props) {
 
   return (
     <section className="py-20" id="blog">
-      <Heading animationData={animationData}>Some of my blogs</Heading>
+      <Heading animationData={animationData}>Some of My Blogs</Heading>
 
       <div className="py-5 space-y-5">
         {firstThreeBlogs.map(blog => (

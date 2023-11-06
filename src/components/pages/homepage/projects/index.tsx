@@ -9,7 +9,7 @@ export default function Projects() {
       <Heading animationData={animationData}>
         Some Things I&apos;ve Built
       </Heading>
-      <div className="space-y-5">
+      <div className="space-y-10">
         {projects.map((project, index) => (
           <Project key={project.title} project={project} index={index} />
         ))}
