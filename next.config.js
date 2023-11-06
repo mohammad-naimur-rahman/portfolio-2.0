@@ -4,6 +4,7 @@ const nextConfig = {
     remotePatterns: [
       { hostname: 'res.cloudinary.com' },
       { hostname: 'www.google.com' },
+      { hostname: 'cdn-images-1.medium.com' },
     ],
   },
   webpack: config => {

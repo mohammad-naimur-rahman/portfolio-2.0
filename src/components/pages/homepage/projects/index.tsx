@@ -5,7 +5,7 @@ import Project from './Project'
 
 export default function Projects() {
   return (
-    <section>
+    <section className="py-20" id="projects">
       <Heading animationData={animationData}>
         Some Things I&apos;ve Built
       </Heading>
