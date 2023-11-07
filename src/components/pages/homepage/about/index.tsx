@@ -3,6 +3,7 @@ import Button from '@/components/ui/button'
 import ExternalLink from '@/components/ui/external-link'
 import { Img } from '@/components/ui/img'
 import Typography from '@/components/ui/typography'
+import { configs } from '@/configs'
 import { BsDownload } from 'react-icons/bs'
 import { GrContact } from 'react-icons/gr'
 import WorkTag from './WorkTag'
@@ -17,12 +18,24 @@ export default function About() {
             experienced full stack web developer.
           </Typography>
           <div className="flex flex-wrap gap-3 mt-5">
-            <Button
-              value="Get My CV"
-              icon={<BsDownload />}
-              variant="secondary"
-            />
-            <Button value="Contact Me" icon={<GrContact />} variant="primary" />
+            <a
+              href={`https://drive.google.com/uc?export=download&id=${configs.resumeId}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button
+                value="Get My CV"
+                icon={<BsDownload />}
+                variant="secondary"
+              />
+            </a>
+            <a href="#contact">
+              <Button
+                value="Contact Me"
+                icon={<GrContact />}
+                variant="primary"
+              />
+            </a>
           </div>
         </div>
         <Img

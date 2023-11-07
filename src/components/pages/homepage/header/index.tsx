@@ -9,6 +9,7 @@ export default function Header() {
         <Typography variant="h1" className="font-bold text-balance">
           Web Developer, Technical Writer & Content Creator
         </Typography>
+
         <Typography
           variant="body"
           className="mt-7 text-lg font-light text-balance"
