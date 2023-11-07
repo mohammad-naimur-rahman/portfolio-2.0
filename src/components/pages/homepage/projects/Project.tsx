@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import { Img } from '@/components/ui/img'
+import Reveal from '@/components/ui/reveal'
 import Typography from '@/components/ui/typography'
 import { IProject } from '@/constants/homepage/projects'
 
@@ -26,12 +27,14 @@ function ProjectLinks({ project }: { project: IProject }) {
 function LeftProject({ project }: { project: IProject }) {
   return (
     <div className="flex flex-col md:flex-row items-center relative">
-      <div className="w-full md:w-3/5">
-        <Img
-          src={project.image}
-          alt={project.title}
-          className="aspect-video object-cover"
-        />
+      <div className="w-full md:w-3/5 -z-10">
+        <Reveal animateIn="fadeInRight">
+          <Img
+            src={project.image}
+            alt={project.title}
+            className="aspect-video object-cover"
+          />
+        </Reveal>
       </div>
       <div className="w-full md:w-2/5 space-y-1 p-3 text-left md:text-right">
         <p className="font-jost text-teal-500">Featured Project</p>
@@ -78,11 +81,13 @@ function RightProject({ project }: { project: IProject }) {
       </div>
 
       <div className="w-full order-1 md:order-2 md:w-3/5 z-10">
-        <Img
-          src={project.image}
-          alt={project.title}
-          className="aspect-video object-cover"
-        />
+        <Reveal animateIn="fadeInLeft">
+          <Img
+            src={project.image}
+            alt={project.title}
+            className="aspect-video object-cover"
+          />
+        </Reveal>
       </div>
     </div>
   )

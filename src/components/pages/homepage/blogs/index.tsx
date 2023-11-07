@@ -1,6 +1,7 @@
 import animationData from '@/assets/lottiefiles/blog.json'
 import Button from '@/components/ui/button'
 import Heading from '@/components/ui/heading'
+import Reveal from '@/components/ui/reveal'
 import { configs } from '@/configs'
 import BlogCard from './BlogCard'
 
@@ -25,8 +26,10 @@ export default function Blogs({ blogs }: Props) {
       <Heading animationData={animationData}>Some of My Blogs</Heading>
 
       <div className="py-5 space-y-5">
-        {firstThreeBlogs.map(blog => (
-          <BlogCard key={blog?.title} blog={blog} />
+        {firstThreeBlogs.map((blog, index) => (
+          <Reveal animateIn="fadeInUp" key={blog?.title} delay={index * 100}>
+            <BlogCard blog={blog} />
+          </Reveal>
         ))}
       </div>
 

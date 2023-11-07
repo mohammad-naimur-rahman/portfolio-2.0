@@ -1,3 +1,4 @@
+import Reveal from '@/components/ui/reveal'
 import Typography from '@/components/ui/typography'
 import { IExperience } from '@/constants/homepage/experience'
 
@@ -26,11 +27,13 @@ export default function ExperienceCard({ experience }: Props) {
         {experience.start} - {experience.end}
       </Typography>
       <ul>
-        {experience.description.map(description => (
-          <Typography variant="body" className="py-1">
-            <span className="text-teal-500 text-2xl inline-block">▹</span>
-            {description}
-          </Typography>
+        {experience.description.map((description, index) => (
+          <Reveal key={description} animateIn="fadeInRight" delay={index * 100}>
+            <Typography variant="body" className="py-1">
+              <span className="text-teal-500 text-2xl inline-block">▹</span>
+              {description}
+            </Typography>
+          </Reveal>
         ))}
       </ul>
     </div>

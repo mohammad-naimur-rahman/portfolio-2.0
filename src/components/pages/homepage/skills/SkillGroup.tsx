@@ -1,3 +1,4 @@
+import Reveal from '@/components/ui/reveal'
 import Typography from '@/components/ui/typography'
 import { skills as allSkills } from '@/constants/homepage/skills'
 import { formatWord } from '@/utils/formatWord'
@@ -15,8 +16,10 @@ export default function SkillGroup({ category }: Props) {
         {formatWord(category)}
       </Typography>
       <ul className="flex flex-wrap gap-x-5 gap-y-3">
-        {skills.map(({ href, label }) => (
-          <Skill key={label} label={label} href={href} />
+        {skills.map(({ href, label }, index) => (
+          <Reveal key={label} animateIn="fadeInUp" delay={index * 50}>
+            <Skill label={label} href={href} />
+          </Reveal>
         ))}
       </ul>
     </div>

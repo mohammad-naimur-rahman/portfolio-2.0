@@ -18,7 +18,7 @@ const Button: FC<ButtonProps> = ({
   className,
   type = 'button',
 }) => {
-  const buttonClasses = `px-8 py-3 rounded-full flex items-center gap-2 ${
+  const buttonClasses = `px-8 py-3 rounded-full flex items-center gap-2 shadow-md ${
     variant === 'secondary'
       ? 'bg-slate-600 hover:bg-slate-700 transition-all text-white'
       : 'bg-teal-400 hover:bg-teal-500 transition-all text-zinc-800'
