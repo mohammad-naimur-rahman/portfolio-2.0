@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: false,
+  // experimental: {
+  //   webpackBuildWorker: true,
+  // },
   images: {
     remotePatterns: [
       { hostname: 'res.cloudinary.com' },
@@ -8,14 +11,14 @@ const nextConfig = {
       { hostname: 'cdn-images-1.medium.com' },
     ],
   },
-  webpack: config => {
-    config.module.rules.push({
-      test: /\.lottie$/,
-      type: 'asset/resource',
-    })
+  // webpack: config => {
+  //   config.module.rules.push({
+  //     test: /\.lottie$/,
+  //     type: 'asset/resource',
+  //   })
 
-    return config
-  },
+  //   return config
+  // },
 }
 
 module.exports = nextConfig
