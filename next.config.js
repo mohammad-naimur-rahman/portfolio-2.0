@@ -11,6 +11,7 @@ const nextConfig = {
       { hostname: 'cdn-images-1.medium.com' },
     ],
   },
+  staticPageGenerationTimeout: 180,
   // webpack: config => {
   //   config.module.rules.push({
   //     test: /\.lottie$/,
