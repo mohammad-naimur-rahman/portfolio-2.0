@@ -2,7 +2,7 @@
 
 import { cn } from '@/utils/cn'
 import { useEffect, useState } from 'react'
-import { BiChevronUp } from 'react-icons/bi'
+import { SlArrowUp } from 'react-icons/sl'
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -43,7 +43,7 @@ const ScrollToTop = () => {
       )}
       onClick={scrollToTop}
     >
-      <BiChevronUp className="text-6xl text-white" />
+      <SlArrowUp className="text-2xl text-white font-light" />
     </button>
   )
 }

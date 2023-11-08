@@ -5,19 +5,19 @@ interface Props {
 
 export const navLinks: Props[] = [
   {
-    href: '#about-me',
+    href: 'about',
     label: 'About',
   },
   {
-    href: '#projects',
+    href: 'projects',
     label: 'Projects',
   },
   {
-    href: '#blog',
+    href: 'blogs',
     label: 'Blog',
   },
   {
-    href: '#contact',
+    href: 'contact',
     label: 'Contact',
   },
 ]

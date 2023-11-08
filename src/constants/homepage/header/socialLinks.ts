@@ -8,6 +8,7 @@ import {
   BiLogoMedium,
   BiLogoStackOverflow,
   BiLogoTwitter,
+  BiLogoWhatsapp,
   BiLogoYoutube,
 } from 'react-icons/bi'
 
@@ -49,6 +50,11 @@ export const socialLinks: Props[] = [
     icon: BiLogoInstagram,
   },
   {
+    label: 'YouTube',
+    href: 'https://youtube.com/codewithnaimur',
+    icon: BiLogoYoutube,
+  },
+  {
     label: 'Codepen',
     href: 'https://codepen.io/naimur-rahman-dev',
     icon: BiLogoCodepen,
@@ -59,13 +65,13 @@ export const socialLinks: Props[] = [
     icon: BiLogoDiscord,
   },
   {
-    label: 'YouTube',
-    href: 'https://youtube.com/codewithnaimur',
-    icon: BiLogoYoutube,
-  },
-  {
     label: 'Stackoverflow',
     href: 'https://stackoverflow.com/users/8364864/naimur',
     icon: BiLogoStackOverflow,
+  },
+  {
+    label: 'WhatsApp',
+    href: 'https://wa.me/+8801600011445',
+    icon: BiLogoWhatsapp,
   },
 ]

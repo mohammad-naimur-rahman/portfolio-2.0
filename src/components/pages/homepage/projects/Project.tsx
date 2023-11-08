@@ -28,7 +28,7 @@ function LeftProject({ project }: { project: IProject }) {
   return (
     <div className="flex flex-col md:flex-row items-center relative">
       <div className="w-full md:w-3/5 -z-10">
-        <Reveal animateIn="fadeInRight">
+        <Reveal animateIn="fadeInRight" duration={2}>
           <Img
             src={project.image}
             alt={project.title}
@@ -81,7 +81,7 @@ function RightProject({ project }: { project: IProject }) {
       </div>
 
       <div className="w-full order-1 md:order-2 md:w-3/5 z-10">
-        <Reveal animateIn="fadeInLeft">
+        <Reveal animateIn="fadeInLeft" duration={2}>
           <Img
             src={project.image}
             alt={project.title}

@@ -28,7 +28,12 @@ export default function ExperienceCard({ experience }: Props) {
       </Typography>
       <ul>
         {experience.description.map((description, index) => (
-          <Reveal key={description} animateIn="fadeInRight" delay={index * 100}>
+          <Reveal
+            key={description}
+            animateIn="fadeInRight"
+            delay={index * 100}
+            duration={2}
+          >
             <Typography variant="body" className="py-1">
               <span className="text-teal-500 text-2xl inline-block">▹</span>
               {description}

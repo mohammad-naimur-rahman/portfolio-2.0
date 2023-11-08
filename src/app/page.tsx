@@ -30,9 +30,11 @@ export default async function Home() {
   return (
     <main>
       <Header />
-      <About />
-      <Skills />
-      <Experience />
+      <section className="about">
+        <About />
+        <Skills />
+        <Experience />
+      </section>
       <Projects />
       <Blogs blogs={blogs} />
       <Contact />

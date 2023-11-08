@@ -10,7 +10,7 @@ export default function Skill({ label, href }: Props) {
     <li key={label}>
       <a href={href} className="flex items-center">
         <DomainIcon domain={href} />
-        <p className="text-sky-700 dark:text-sky-400 underline font-normal">
+        <p className="text-sky-700 dark:text-sky-400 underline underline-offset-4 font-normal">
           {label}
         </p>
       </a>

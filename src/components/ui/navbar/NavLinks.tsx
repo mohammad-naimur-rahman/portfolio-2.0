@@ -1,6 +1,6 @@
 import { navLinks } from '@/constants/ui/navLinks'
 import { cn } from '@/utils/cn'
-import Link from 'next/link'
+import { Link } from 'react-scroll'
 
 interface Props {
   className?: string
@@ -14,7 +14,16 @@ export default function NavLinks({ className }: Props) {
           key={label}
           className="text-base font-semibold hover:underline underline-offset-4"
         >
-          <Link href={href}>{label}</Link>
+          <Link
+            activeClass="underline"
+            className="cursor-pointer"
+            to={href}
+            spy
+            smooth
+            duration={300}
+          >
+            {label}
+          </Link>
         </li>
       ))}
     </ul>

@@ -1,9 +1,9 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import { navLinks } from '@/constants/ui/navLinks'
 import { cn } from '@/utils/cn'
-import Link from 'next/link'
 import { Dispatch, SetStateAction } from 'react'
+import { Link } from 'react-scroll'
 
 interface Props {
   className?: string
@@ -25,12 +25,18 @@ export default function NavDrawer({ className, isOpen, setIsOpen }: Props) {
     >
       <ul className="text-center py-10">
         {navLinks.map(({ href, label }) => (
-          <li
-            key={label}
-            className="text-base font-semibold my-10"
-            onClick={() => setIsOpen(false)}
-          >
-            <Link href={href}>{label}</Link>
+          <li key={label} className="text-base font-semibold my-10">
+            <Link
+              activeClass="underline"
+              className="cursor-pointer"
+              to={href}
+              spy
+              smooth
+              duration={300}
+              onClick={() => setIsOpen(false)}
+            >
+              {label}
+            </Link>
           </li>
         ))}
       </ul>

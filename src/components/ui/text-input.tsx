@@ -34,7 +34,7 @@ const TextInput: React.FC<TextInputProps> = ({
         <textarea
           className={`${
             error ? 'border-red-500' : 'border-gray-300'
-          } rounded w-full py-2 px-3 ring-2 ring-teal-700 dark:ring-teal-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:dark:ring-sky-500 bg-white dark:bg-secondary`}
+          } rounded-xl w-full p-3 ring-2 ring-teal-700 dark:ring-teal-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:dark:ring-sky-500 bg-white dark:bg-secondary`}
           id={label}
           rows={rows}
           placeholder={placeholder}
@@ -45,7 +45,7 @@ const TextInput: React.FC<TextInputProps> = ({
         <input
           className={`${
             error ? 'border-red-500' : 'border-gray-300'
-          } rounded w-full py-2 px-3 ring-2 ring-teal-700 dark:ring-teal-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:dark:ring-sky-500 bg-white dark:bg-secondary`}
+          } rounded-xl w-full p-3 ring-2 ring-teal-700 dark:ring-teal-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:dark:ring-sky-500 bg-white dark:bg-secondary`}
           id={label}
           type={type}
           placeholder={placeholder}

@@ -3,7 +3,9 @@
 'use client'
 
 import Button from '@/components/ui/button'
+import ExternalLink from '@/components/ui/external-link'
 import TextInput from '@/components/ui/text-input'
+import Typography from '@/components/ui/typography'
 import { configs } from '@/configs'
 import emailjs from '@emailjs/browser'
 import { FormEventHandler, RefObject, useRef } from 'react'
@@ -63,6 +65,24 @@ export default function ContactForm() {
         placeholder="Write your message"
       />
       <Button type="submit" value="Send Message" icon={<GrContact />} />
+      <Typography variant="body" className="italic pt-4 pl-1 text-lg">
+        Or contact me via{' '}
+        <ExternalLink
+          href="mailto:naeemhasan28@gmail.com"
+          label="Email"
+          className="pr-2"
+        />
+        <ExternalLink
+          href="https://wa.me/+8801600011445"
+          label="WhatsApp"
+          className="pr-2"
+        />
+        <ExternalLink
+          href="https://www.linkedin.com/in/mohammad-naimur-rahman/"
+          label="LinkedIn"
+          className="pr-2"
+        />
+      </Typography>
     </form>
   )
 }
