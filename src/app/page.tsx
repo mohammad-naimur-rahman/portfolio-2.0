@@ -11,7 +11,7 @@ import { configs } from '@/configs'
 import type { Metadata } from 'next'
 
 async function getData() {
-  const res = await fetch(configs.medium.api!, { next: { revalidate: 3600 } })
+  const res = await fetch(configs.medium.api!, { next: { revalidate: 84600 } })
 
   if (!res.ok) {
     throw new Error('Failed to fetch data')

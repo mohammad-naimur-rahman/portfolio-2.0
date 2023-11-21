@@ -1,6 +1,9 @@
 import Typography from '@/components/ui/typography'
-import HeaderAnimation from './HeaderAnimation'
+// import HeaderAnimation from './HeaderAnimation'
+import { lazy, Suspense } from 'react'
 import SocialLinks from './SocialLinks'
+
+const HeaderAnimation = lazy(() => import('./HeaderAnimation'))
 
 export default function Header() {
   return (
@@ -23,7 +26,13 @@ export default function Header() {
       </section>
 
       <section className="w-full lg:w-2/5 order-1 lg:order-2">
-        <HeaderAnimation />
+        <Suspense
+          fallback={
+            <div className="w-1/3 h-[30vh] bg-slate-500 dark:bg-slate-600 animate-pulse bg-opacity-40 dark:bg-opacity-40" />
+          }
+        >
+          <HeaderAnimation />
+        </Suspense>
       </section>
     </header>
   )

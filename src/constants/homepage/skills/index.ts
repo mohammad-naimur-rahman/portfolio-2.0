@@ -1,7 +1,6 @@
 import { AiOutlineForm } from 'react-icons/ai'
 import {
   BiLibrary,
-  BiLogoCss3,
   BiLogoFirebase,
   BiLogoGit,
   BiLogoGithub,
@@ -11,6 +10,7 @@ import {
   BiLogoPostgresql,
   BiLogoReact,
   BiLogoRedux,
+  BiLogoSass,
   BiLogoStripe,
   BiLogoTailwindCss,
   BiLogoTypescript,
@@ -67,9 +67,9 @@ export const skills: Props[] = [
     category: 'frontend',
   },
   {
-    label: 'Raw CSS',
-    icon: BiLogoCss3,
-    href: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+    label: 'Sass',
+    icon: BiLogoSass,
+    href: 'https://sass-lang.com/',
     category: 'frontend',
   },
   {
