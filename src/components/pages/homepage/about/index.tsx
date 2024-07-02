@@ -49,7 +49,7 @@ export default function About() {
         <div className="space-y-5 pt-7">
           <Typography variant="body" className="text-xl text-balance">
             <span className="text-2xl">👋</span> Hey there! I&apos;m a full
-            stack web developer with over 2 years of hands-on experience in
+            stack web developer with over 3 years of hands-on experience in
             creating optimized web applications with good user experience.
           </Typography>
 
