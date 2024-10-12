@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import About from '@/components/pages/homepage/about'
 import Blogs from '@/components/pages/homepage/blogs'
 import Contact from '@/components/pages/homepage/contact'
 import Experience from '@/components/pages/homepage/experience'
@@ -31,7 +30,7 @@ export default async function Home() {
     <main>
       <Header />
       <section className="about">
-        <About />
+        {/* <About /> */}
         <Skills />
         <Experience />
       </section>
