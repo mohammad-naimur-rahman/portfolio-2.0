@@ -1,3 +1,4 @@
+import Genius from '@/assets/images/homepage/projects/genius.png'
 import picturesque from '@/assets/images/homepage/projects/picturesque.jpg'
 import wedPortraits from '@/assets/images/homepage/projects/wed-portraits.jpg'
 import { StaticImageData } from 'next/image'
@@ -22,6 +23,38 @@ export interface IProject {
 }
 
 export const projects: IProject[] = [
+  {
+    category: 'featured',
+    title: 'Genius+',
+    description:
+      'Genius+ is a full-stack web application with the touch of AI to help students learn better',
+    href: 'https://genius-plus-frontend.vercel.app/',
+    image: Genius,
+    stack: [
+      'Next js',
+      'TypeScript',
+      'Redux',
+      'RTK Query',
+      'Shadcn UI',
+      'Express js',
+      'OpenAI API',
+      'PostgreSQL',
+    ],
+    links: [
+      {
+        href: 'https://github.com/mohammad-naimur-rahman/genius-plus-frontend',
+        icon: BiLogoGithub,
+      },
+      {
+        href: 'https://github.com/mohammad-naimur-rahman/genius-plus-server',
+        icon: BiServer,
+      },
+      {
+        href: 'https://genius-plus-frontend.vercel.app/',
+        icon: BiLinkExternal,
+      },
+    ],
+  },
   {
     category: 'featured',
     title: 'Wed Portraits Photography',
