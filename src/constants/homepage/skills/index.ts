@@ -27,6 +27,7 @@ import {
   SiNotion,
   SiPrettier,
   SiPrisma,
+  SiReactquery,
   SiStrapi,
   SiWebauthn,
   SiZod,
@@ -91,9 +92,21 @@ export const skills: Props[] = [
     category: 'frontend',
   },
   {
+    label: 'Redux',
+    icon: BiLogoRedux,
+    href: 'https://redux.js.org/',
+    category: 'frontend',
+  },
+  {
     label: 'Redux Toolkit',
     icon: BiLogoRedux,
     href: 'https://redux-toolkit.js.org/',
+    category: 'frontend',
+  },
+  {
+    label: 'React Query',
+    icon: SiReactquery,
+    href: 'https://tanstack.com/query/v3',
     category: 'frontend',
   },
   {
@@ -148,6 +161,18 @@ export const skills: Props[] = [
     label: 'Prisma',
     icon: SiPrisma,
     href: 'https://www.prisma.io/',
+    category: 'backend',
+  },
+  {
+    label: 'Drizzle ORM',
+    icon: SiPrisma,
+    href: 'https://orm.drizzle.team/',
+    category: 'backend',
+  },
+  {
+    label: 'OpenAI API',
+    icon: SiPrisma,
+    href: 'https://platform.openai.com/docs/concepts',
     category: 'backend',
   },
   {
@@ -220,6 +245,42 @@ export const skills: Props[] = [
     label: 'Notion',
     icon: SiNotion,
     href: 'https://www.notion.so/',
+    category: 'others',
+  },
+  {
+    label: 'Markdown',
+    icon: SiNotion,
+    href: 'https://www.markdownguide.org/',
+    category: 'others',
+  },
+  {
+    label: 'Figma',
+    icon: SiNotion,
+    href: 'https://www.figma.com/',
+    category: 'others',
+  },
+  {
+    label: 'Asana',
+    icon: SiNotion,
+    href: 'https://asana.com/',
+    category: 'others',
+  },
+  {
+    label: 'VS Code',
+    icon: SiNotion,
+    href: 'https://code.visualstudio.com/',
+    category: 'others',
+  },
+  {
+    label: 'WebStorm',
+    icon: SiNotion,
+    href: 'https://www.jetbrains.com/webstorm/',
+    category: 'others',
+  },
+  {
+    label: 'Postman',
+    icon: SiNotion,
+    href: 'https://www.postman.com/',
     category: 'others',
   },
 ]
