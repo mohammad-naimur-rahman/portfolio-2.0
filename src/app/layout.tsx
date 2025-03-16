@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className={cn(
           ptSans.className,
           jost.variable,
-          'dark:bg-bg-primary dark:text-zinc-100 text-zinc-700'
+          'dark:bg-bg-primary dark:text-zinc-100 text-zinc-700 overflow-x-hidden'
         )}
       >
         <Providers>
