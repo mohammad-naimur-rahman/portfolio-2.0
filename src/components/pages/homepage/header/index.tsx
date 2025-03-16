@@ -16,6 +16,9 @@ export default function Header() {
     <header className="py-10 lg:py-20 xl:py-32 min-h-screen">
       <section className="flex flex-col lg:flex-row items-center justify-center gap-10">
         <section className="w-full lg:w-3/5 order-2 lg:order-1">
+          <Typography variant="h2" className="font-bold text-balance mt-6">
+            Hi, I&apos;m <span className="text-teal-500">Naimur Rahman</span>
+          </Typography>
           <Typography variant="h1" className="font-bold text-balance">
             Web Developer, Technical Writer & Content Creator
           </Typography>
@@ -24,8 +27,15 @@ export default function Header() {
             variant="body"
             className="mt-7 text-lg font-light text-balance"
           >
-            An experienced full stack web developer passionate about building
-            optimized and well-sturctured web application.
+            👋 I&apos;m a full-stack web developer with almost four years of
+            experience in building optimized, user-friendly web applications. I
+            see my career as a continuous learning journey—building, breaking,
+            and improving my skills daily. Beyond coding, I actively explore
+            senior developers&apos; codebases, stay updated on new technologies,
+            and prioritize best practices like clean code, accessibility, and
+            performance optimization. My approach is to sharpen my skills
+            constantly, ensuring high-quality development and a great user
+            experience.
           </Typography>
 
           <SocialLinks />
@@ -42,11 +52,6 @@ export default function Header() {
       </section>
 
       <section>
-        <Typography variant="h2" className="font-bold text-balance mt-6">
-          I&apos;m <span className="text-teal-500">Naimur Rahman</span>, an
-          experienced full stack web developer.
-        </Typography>
-
         <div className="flex flex-wrap gap-3 mt-5">
           <a
             href={`https://drive.google.com/uc?export=download&id=${configs.resumeId}`}
@@ -65,26 +70,6 @@ export default function Header() {
         </div>
 
         <div className="space-y-5 pt-7">
-          <Typography variant="body" className="text-xl text-balance">
-            <span className="text-2xl">👋</span> Hey there! I&apos;m a full
-            stack web developer with over 3 years of hands-on experience in
-            creating optimized web applications with good user experience.
-          </Typography>
-
-          <Typography variant="body" className="text-lg">
-            I consider my web development career path as an endless dynamic
-            journey where I work every day, make mistakes, and learn every day.
-            I build things, I break things and thus I strengthen my knowledge
-            base. I spend a lot of time outside of coding reviewing senior
-            developers&apos; codebases, reading blogs, searching for new
-            technologies, and making myself aware of the current web development
-            world because I follow the sharpening of the axe before cutting the
-            wood method quite seriously. Every day, I learn and try to apply
-            best practices, code optimization, good code readability,
-            well-structured codebase, accessibility, and most importantly, good
-            user experience.
-          </Typography>
-
           <Typography variant="body" className="text-lg">
             I can help you build
             <WorkTag>Fullstack Web Application,</WorkTag>

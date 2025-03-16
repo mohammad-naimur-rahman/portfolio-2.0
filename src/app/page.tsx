@@ -30,7 +30,6 @@ export default async function Home() {
     <main>
       <Header />
       <section className="about">
-        {/* <About /> */}
         <Skills />
         <Experience />
       </section>
