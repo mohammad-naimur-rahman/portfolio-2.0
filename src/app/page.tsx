@@ -35,7 +35,7 @@ export default async function Home() {
         <Experience />
       </section>
       <Projects />
-      <Blogs blogs={blogs} />
+      <Blogs blogs={blogs?.items} />
       <Contact />
       <Footer />
     </main>

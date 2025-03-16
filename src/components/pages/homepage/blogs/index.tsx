@@ -3,30 +3,22 @@ import Button from '@/components/ui/button'
 import Heading from '@/components/ui/heading'
 import Reveal from '@/components/ui/reveal'
 import { configs } from '@/configs'
-import BlogCard from './BlogCard'
-
-export interface IBlog {
-  title: string
-  link: string
-  category: string[]
-  published: number
-  content: string
-}
+import BlogCard, { IBlog } from './BlogCard'
 
 interface Props {
   blogs: IBlog[]
 }
 
 export default function Blogs({ blogs }: Props) {
-  const sortedBlogs = blogs?.sort((a, b) => b.published - a.published)
-  const firstThreeBlogs = sortedBlogs?.slice(0, 3)
+  // const sortedBlogs = blogs?.sort((a, b) => b.published - a.published)
+  const firstThreeBlogs = blogs?.slice(0, 3)
 
   return (
     <section className="py-10 md:py-16 lg:py-20 blogs">
       <Heading animationData={animationData}>Some of My Blogs</Heading>
 
       <div className="py-5 space-y-5">
-        {firstThreeBlogs.map((blog, index) => (
+        {firstThreeBlogs?.map((blog, index) => (
           <Reveal
             animateIn="fadeInUp"
             key={blog?.title}

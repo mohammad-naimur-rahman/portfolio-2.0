@@ -3,16 +3,16 @@
 import Button from '@/components/ui/button'
 import { Img } from '@/components/ui/img'
 import Typography from '@/components/ui/typography'
-import { formateDate } from '@/utils/formatDate'
 import { parse } from 'node-html-parser'
 import { BsCalendar2Day } from 'react-icons/bs'
 
-interface IBlog {
+export interface IBlog {
   title: string
   link: string
   category: string[]
-  published: number
+  pubDate: string
   content: string
+  description: string
 }
 
 interface Props {
@@ -47,7 +47,7 @@ export default function BlogCard({ blog }: Props) {
           {blog?.title}
         </Typography>
         <Typography variant="body" className="flex items-center gap-2">
-          <BsCalendar2Day /> {formateDate(blog?.published)}
+          <BsCalendar2Day /> {blog?.pubDate?.slice(0, 10)}
         </Typography>
         <ul className="flex flex-wrap gap-2">
           {blog?.category?.map(category => (
