@@ -170,9 +170,15 @@ export const skills: Props[] = [
     category: 'backend',
   },
   {
-    label: 'OpenAI API',
+    label: 'AI SDK',
     icon: SiPrisma,
-    href: 'https://platform.openai.com/docs/concepts',
+    href: 'https://sdk.vercel.ai/',
+    category: 'backend',
+  },
+  {
+    label: 'Langchain.js',
+    icon: SiPrisma,
+    href: 'https://js.langchain.com/docs/introduction/',
     category: 'backend',
   },
   {

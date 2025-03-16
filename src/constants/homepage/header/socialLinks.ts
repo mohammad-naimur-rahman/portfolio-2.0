@@ -51,7 +51,7 @@ export const socialLinks: Props[] = [
   },
   {
     label: 'YouTube',
-    href: 'https://youtube.com/codewithnaimur',
+    href: 'https://www.youtube.com/@codewithnaimur',
     icon: BiLogoYoutube,
   },
   {
