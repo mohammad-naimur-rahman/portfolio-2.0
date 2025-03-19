@@ -16,12 +16,12 @@ export default function Header() {
     <header className="py-10 lg:py-20 xl:py-32 min-h-screen">
       <section className="flex flex-col lg:flex-row items-center justify-center gap-10">
         <section className="w-full lg:w-3/5 order-2 lg:order-1">
-          <Typography variant="h2" className="font-bold text-balance mt-6">
+          <h1 className="text-5xl font-bold text-balance mb-4">
             Hi, I&apos;m <span className="text-teal-500">Naimur Rahman</span>
-          </Typography>
-          <Typography variant="h1" className="font-bold text-balance">
-            Web Developer, Technical Writer & Content Creator
-          </Typography>
+          </h1>
+          <h2 className="text-4xl font-bold text-balance">
+            Full Stack Web Developer, Technical Writer & Content Creator
+          </h2>
 
           <Typography
             variant="body"

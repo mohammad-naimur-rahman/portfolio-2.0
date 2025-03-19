@@ -6,6 +6,7 @@ import Footer from '@/components/pages/homepage/footer'
 import Header from '@/components/pages/homepage/header'
 import Projects from '@/components/pages/homepage/projects'
 import Skills from '@/components/pages/homepage/skills'
+import Youtube from '@/components/pages/homepage/youtube'
 import { configs } from '@/configs'
 import type { Metadata } from 'next'
 
@@ -35,6 +36,7 @@ export default async function Home() {
       </section>
       <Projects />
       <Blogs blogs={blogs?.items} />
+      <Youtube />
       <Contact />
       <Footer />
     </main>
