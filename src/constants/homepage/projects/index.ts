@@ -50,6 +50,10 @@ export const projects: IProject[] = [
         icon: BiServer,
       },
       {
+        href: 'https://youtu.be/OJCRnE5eXMQ',
+        icon: BiLogoYoutube,
+      },
+      {
         href: 'https://genius-plus-frontend.vercel.app/',
         icon: BiLinkExternal,
       },
